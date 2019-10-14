@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Specificity</title>
+	<style>
+		body {
+			background-color: lightblue;
+		}
+
+
+		#p1 {
+			color: yellow;
+		}
+
+		p {
+			color: green;
+		}
+
+		ul#sarapan li {
+			color: green;
+		}
+
+		ul#sarapan, li.favorit {
+			color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+	<p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere porro tempora voluptatem culpa quo libero doloribus distinctio recusandae corrupti repellat.</p>
+
+	<ul id="sarapan">
+		<li class="favorit">Ikan Mas</li>
+		<li>Nasi Kuning</li>
+		<li>Roti Bakar</li>
+		<li>Bebek</li>
+		<li>Ayam Goreng</li>
+	</ul>
+	
+</body>
+</html>

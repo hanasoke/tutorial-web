@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Manipulation</title>
+  <style>
+    * { 
+        border: 2px solid #dedede; 
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+    .biru-muda {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+<script>
+  const head = document.getElementById('judul')
+  head.innerHTML = '<em>Hanas Bayu Pratama</em>'
+
+  const sectionA = document.querySelector('section#a .p2')
+  sectionA.innerHTML = "hello world!"
+
+  const item = document.querySelector('section#b li:nth-child(2)')
+  item.style.color = 'coral'
+  item.style.backgroundColor = 'green'
+
+  const judul = document.querySelector('#judul')
+  judul.setAttribute('name', 'Hanas')
+
+  const href = document.querySelector('a')
+  href.removeAttribute('href')
+
+  const p3 = document.querySelector('section#a .p3')
+  p3.getAttribute('class')
+
+  const p2 = document.querySelector('.p2')
+  // menambah class tampa menimpa class sebelumnya
+  p2.classList.add('label')
+  // menghapus class
+  p2.classList.remove('label')
+
+  // menambah class jika ada class tampa menimpa dan menghapus class jika ada class
+  p2.classList.toggle('label')
+  p2.classList.toggle('label')
+
+  p2.classList.add('one')
+  p2.classList.add('two')
+  p2.classList.add('three')
+
+  // mengetahui class diurutan keberapa
+  p2.classList.item(2)
+  console.log(p2.classList.item(2))
+
+  // untuk mengetahui adakah class tersebut
+  console.log(p2.classList.contains('two'))
+  console.log(p2.classList.contains('dua'))
+
+  // untuk mengganti class
+  console.log(p2.classList.replace('two', 'dua'))
+
+</script>
+</body>
+</html>

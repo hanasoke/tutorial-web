@@ -1,0 +1,73 @@
+div {
+	width: 200px;
+	height: 200px;
+}
+.one {
+	background-color: lightgreen;
+}
+.two {
+	background-color: violet;
+	position: relative;
+	top: 30px;
+	left: 30px;
+}
+.three {
+	background-color: gold;
+}
+
+.absolute {
+	width: 600px;
+	height: 650px;
+	border: 10px solid green;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+}
+
+.first {
+	background-color: #21e1cd;
+}
+.second {
+	background-color: #1532df;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.third {
+	background-color: #8f13f8;
+}
+
+.fixed {
+	width: 300px;
+	height: 300px;
+	margin-top: 20px;
+	float: left;
+	border: 5px dotted yellow;
+}
+.fix {
+	background-color: #f30c17;
+	position: fixed;
+	height: 40px;
+	width: 30%;
+	top: 0;
+	right: 0;
+}
+
+.single,.multiple,.triple {
+	position: absolute;
+}
+.single {
+	background-color: salmon;
+	z-index: -999;
+}
+.multiple {
+	background-color: lightgreen;
+	top: 100px;
+	left: 100px;
+	z-index: 2;
+}
+.triple {
+	background-color: royalblue;
+	top: 200px;
+	left: 200px;
+}

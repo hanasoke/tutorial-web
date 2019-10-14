@@ -1,0 +1,56 @@
+.container {
+	width: 600px;
+	border: 1px solid black;
+	margin: auto;
+	padding: 5px;
+	/* /* overflow: auto; */ /* agar bisa menyesuaikan dgn img */
+}
+
+.one,.two,.three {
+	width: 100px;
+	height: 100px;
+}
+
+.one {
+	background-color: salmon;
+}
+
+.two {
+	background-color: limegreen;
+	float: right;
+}
+.three {
+	background-color: lightskyblue;
+}
+
+.clear {
+	clear: right;
+}
+.clear-2 {
+	clear: left;
+}
+
+img {
+	float: right;
+	margin: 5px;
+}
+
+.cube {
+	width: 80px;
+	height: 80px;
+	background-color: salmon;
+	color: white;
+	text-align: center;
+	line-height: 80px;
+	font-size: 30px;
+	margin: 2px;
+	float: left;
+}
+
+.container-1 {
+	width: 600px;
+	height: 250px;
+	border: 1px solid black;
+	margin: auto;
+	padding: 5px;
+}

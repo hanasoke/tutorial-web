@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Linear Gradient1</title>
+	<style>
+		body {
+			background-image: url('united-squares.png');
+			height: 1000px;
+		}
+		.head {
+			width: 350px;
+			height: 350px;
+			background: linear-gradient(to left top,rgba(28, 222, 239, 0.4) 20%,rgba(33, 239, 28, 0.8) 40%,#fbee1b 80%);
+			margin: auto;
+			margin-top: 100px;
+			position: relative;
+		}
+		.one {
+			width: 150px;
+			height: 150px;
+			background: linear-gradient(30deg, hsla(127, 100%, 88%, 0.4) 63%,red 89%);
+			position: absolute;
+			right: -50px;
+			top: -50px;
+		}
+		.two {
+			width: 150px;
+			height: 150px;
+			background: linear-gradient(-90deg, purple 60%, #f6a0f3 70%);
+			position: absolute;
+			left: -50px;
+			top: -50px;
+		}
+		.three {
+			width: 150px;
+			height: 150px;
+			background: linear-gradient(to bottom, #dffb20 20%,#24f808 40%,#9229fe 60%,#54efb3 80%,#fb8919 100%);
+			position: absolute;
+			left: -50px;
+			bottom: -50px; 
+		}
+		.four {
+			width: 150px;
+			height: 150px;
+			background: linear-gradient(to top right, rgba(228, 20, 20, 0.9)20%,rgba(147, 228, 20, 0.6)40%, rgba(20, 162, 228, 0.7)90%);
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<div class="one"></div>
+		<div class="two"></div>
+		<div class="three"></div>
+		<div class="four"></div>
+	</div>
+</body>
+</html>

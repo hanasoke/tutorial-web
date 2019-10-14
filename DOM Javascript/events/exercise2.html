@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Playing Color</title>
+</head>
+<body>
+
+	<input type="range" name="red" min="0" max="255">
+	<input type="range" name="green" min="0" max="255">
+	<input type="range" name="blue" min="0" max="255">
+<script>
+	const color = document.querySelectorAll("input[type='range']")
+
+	color.forEach(function(slider) {
+		slider.addEventListener("input", function() {
+			const r = document.querySelector("input[name='red']").value
+			const g = document.querySelector("input[name='green']").value
+			const b = document.querySelector("input[name='blue']").value
+
+			console.log(r,g,b)
+			document.body.style.backgroundColor = 'rgb(${r}, ${g}, ${b})'
+		})
+	})
+</script>
+</body>
+</html>

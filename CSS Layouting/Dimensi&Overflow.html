@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dimensi & Overflow</title>
+	<style>
+		.one {
+			width: 500px;
+			height: 200px;
+			background-color: pink;
+		}
+		.two {
+			width: 80%;
+			background-color: aqua;
+		}
+		/* overflow */
+		.two-1 {
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			overflow: visible;
+		}
+		.three {
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+			overflow: auto;
+			float: right;
+		}
+		.four {
+			width: 250px;
+			height: 200px;
+			background-color: #d6ec1b;
+			position: fixed;
+			top: 0;
+			right: 20px;
+			overflow: hidden;
+		}
+		.five {
+			width: 250px;
+			height: 200px;
+			background-color: #d6ec1b;
+			position: absolute;
+			top: 40px;
+			right: 400px;
+			overflow: scroll;
+		}
+	</style>
+</head>
+<body>
+	<!-- dimensi -->
+	<div class="one">
+		<div class="two">Hello World</div>
+	</div>
+	<br>
+	<!-- overflow -->
+	<!-- visible -->
+	<div class="two-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum blanditiis debitis ea repudiandae, laboriosam eius ullam voluptate. Commodi quae laborum ex, omnis hic quisquam aut tempora quos impedit reiciendis accusamus!... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam mollitia quas dolorum saepe dolore? Accusantium suscipit doloribus ad quis magni, quae quisquam provident. Sequi hic doloribus reprehenderit, delectus, laboriosam vero?</div>
+	<br>
+
+	<!-- auto -->
+	<div class="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illo doloremque recusandae sed nihil, omnis sit ab praesentium quibusdam, aperiam possimus nobis illum optio aliquam nostrum, nam esse ipsam et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, assumenda rerum unde laborum. Voluptatibus esse cupiditate laboriosam quos, ipsa nam distinctio! Hic laborum, omnis neque, expedita illum soluta. Voluptatum, possimus.</div>
+	<br><br>
+	<!-- hidden -->
+	<div class="four">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nostrum obcaecati consequuntur libero deserunt delectus maiores numquam sapiente ratione quis, quia enim commodi rerum veniam dolor consectetur fugiat error, repudiandae iure illo dolorem repellendus inventore voluptas. Amet sed impedit provident, nesciunt doloribus optio eum eligendi, nobis eveniet alias sit tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis optio vero similique, fugiat sunt earum tempora. Officiis in magnam eligendi, dolore quasi, illum incidunt aliquid vero voluptate eveniet eos tempore.</div>
+
+	<div class="five">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus architecto tempore nesciunt unde ullam maxime dolor minima! Quod dolorem temporibus facilis quas exercitationem deserunt debitis beatae est autem. Asperiores.</div>
+</body>
+</html>

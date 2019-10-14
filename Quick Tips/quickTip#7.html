@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Before and After on CSS</title>
+	<style>
+		div.one {
+			width: 100px;
+			height: 100px;
+			background-color: lightcyan;
+			font-size: 12px;
+		}
+		div.one::after {
+			content: " World!";
+		}
+		div.one::before {
+			content: "Hi, ";
+		}
+		div.beginning {
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			position: relative;
+			margin: 20px auto;
+		}
+
+		div.beginning::before,
+		div.beginning::after {
+			content: "";
+			width: 30px;
+			height: 30px;
+			position: absolute;
+		}
+
+		div.beginning::before {
+			top: -15px;
+			left: -15px;
+			background-color: salmon;
+		}
+
+		div.beginning::after {
+			right: -15px;
+			bottom: -15px;
+			background-color: lightgreen;
+		}
+
+		a.what {
+			text-decoration: none;
+			font-family: arial;
+			font-weight: bold;
+			color: #000;
+		}
+
+		a.what::after {
+			content: " /";
+		}
+
+		a.what:first-child::before {
+			content: " :: ";
+		}
+
+		a.what:last-child::after {
+			content: "";
+		}
+
+		blockquote {
+			font-family: georgia;
+			font-size: 20px;
+			font-size: italic;
+			margin-top: 50px;
+			line-height: 1.4em;
+			position: relative;
+		}
+
+		blockquote::before,
+		blockquote::after {
+			content: open-quote;
+			font-size: 60px;
+			color: #999;
+			line-height: 0;
+			position: relative;
+			top: 20px;
+		}
+
+		blockquote::after {
+			content: close-quote;
+		}
+
+		body {
+			font-family: arial;
+		}
+		h2.a {
+			float: left;
+			width: 170px;
+		}
+		div.b {
+			float: left;
+			width: 200px;
+			background-color: #727272;
+			padding: 10px;
+			border-radius: 6px;
+			color: #fff;
+			position: relative;
+			font-size: 12px;
+			line-height: 20px;
+		}
+		div.b::before {
+			content: "";
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 12px solid transparent;
+			border-bottom: 12px solid transparent;
+			border-right: 12px solid #727272;
+			position: absolute;
+			top: 16px;
+			left: -12px;
+		}
+
+	</style>
+</head>
+<body>
+<div class="one">Hello</div>
+<div class="beginning"></div>
+<br>
+<p>
+	<a class="what" href="#">Home</a>
+	<a class="what" href="#">Tim</a>
+	<a class="what" href="#">Programmer</a>
+</p>
+
+<blockquote>
+	Bermimpilah setinggi langit.. Jika engkau jatuh, engkau akan jatuh di antara bintang-bintang.
+</blockquote>
+<p>- Ir. Soekarno</p>
+
+<h2 class="a">What is lorem ipsum</h2>
+<div class="b">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, temporibus, velit! Vero delectus, hic, laudantium optio sunt eum reiciendis fugiat sapiente deserunt sit ipsum quasi. Sapiente voluptates minima, ab consectetur!
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-Class</title>
+</head>
+<style>
+	.hello {
+		color: orange;
+	}
+	.hello:hover {
+		color: lightblue;
+		font-family: arial;
+		font-size: 30px;
+	}
+	.hello:active {
+		font-style: italic;
+	}
+	.helloo:visited {
+		color: green;
+	}
+	li:first-child a {
+		color: #1a3add;
+	}
+	li:last-child a {
+		color: #aa22dd;
+	}
+	li:nth-child(7) a {
+		color: pink;
+	}
+	li:nth-child(3n) a {
+		color: #14f5a3;
+	}
+	/* li:nth-child(3n+1) a {
+		color: #14f5a3;
+	} */
+	/* li:nth-child(3n-2) a {
+		color: #14f5a3;
+	} */
+	/* untuk genap */
+	/* li:nth-child(even) a {
+		color: #14f5a3;
+	} */
+	/* untuk ganjil */
+	/* li:nth-child(odd) a {
+		color: #14f5a3;
+	} */
+	li:nth-child(even) a:hover {
+		color: #bf1010;
+	}
+	li:nth-child(odd) a:hover {
+		color: #edd00c;
+	}
+	p:first-of-type {
+		color: #168c93;
+	}
+	p:last-of-type {
+		color: #f47d14;
+	}
+</style>
+<body>
+	<a href="#" class="hello">Hello World</a>
+	<ul>
+		<li><a href="#">link 1</a></li>
+		<li><a href="#">link 2</a></li>
+		<li><a href="#">link 3</a></li>
+		<li><a href="#" class="helloo">link 4</a></li>
+		<li><a href="#">link 5</a></li>
+		<li><a href="#">link 6</a></li>
+		<li><a href="#">link 7</a></li>
+		<li><a href="#">link 8</a></li>
+		<li><a href="#">link 9</a></li>
+		<li><a href="#">link 10</a></li>	
+	</ul>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, veritatis aspernatur perspiciatis maxime esse repudiandae nemo numquam cupiditate hic quisquam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab illo beatae tempore cumque excepturi quasi, mollitia natus voluptas dolorum.</p>	
+</body>
+</html>

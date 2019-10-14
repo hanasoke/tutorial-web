@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Background Change</title>
+	<style>
+		html, body {
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+		<h1>Hello World!</h1>
+<script>
+	document.body.addEventListener('mousemove',function(event) {
+		const xPos = Math.round((event.clientX / window.innerWidth) * 255)
+		const yPos = Math.round((event.clientY / window.innerHeight) * 255);
+		document.body.style.backgroundColor = 'rgb('+ xPos +','+ yPos +',100)'
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Animation</title>
+	<style>
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: #880b90;
+			animation: animasiKotak 2s ease;
+			margin-bottom: 100px;
+		}
+
+		@keyframes animasiKotak {
+			0% {
+				width: 200px;
+			}
+
+			50% {
+				width: 500px;
+				height: 200px;
+			}
+			100% {
+				width: 500px;
+				height: 500px;
+			}
+		}
+
+		.kotak1 {
+			width: 200px;
+			height: 200px;
+			background-color: #08eb28;
+			animation-name: animasiKotak;
+			animation-duration: 2s;
+			animation-timing-function: ease;
+			animation-iteration-count: infinite;
+			margin-bottom: 100px;
+		}
+		.kotak2 {
+			width: 200px;
+			height: 200px;
+			background-color: #4a47d2;
+			animation: animasiKotak 2s ease 2 reverse;
+			margin-bottom: 100px;
+		}
+		.kotak3 {
+			width: 200px;
+			height: 200px;
+			background-color: #f4ec07;
+			animation: animasiKotak 2s ease 3 alternate forwards;
+			margin-bottom: 100px;
+		}
+		.kotak4 {
+			width: 200px;
+			height: 200px;
+			background-color: #0be8f6;
+			animation: animasiKotak 3s ease infinite 3 alternate forwards;
+			margin-bottom: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="kotak"></div>
+	
+	<div class="kotak1"></div>
+
+	<div class="kotak2"></div>
+
+	<div class="kotak3"></div>
+
+	<div class="kotak4"></div>
+	
+</body>
+</html>

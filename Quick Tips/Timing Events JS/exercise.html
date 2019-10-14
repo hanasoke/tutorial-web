@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise</title>
+</head>
+<body>
+
+	<h1>Hello World!</h1>
+	
+	<button>Stop</button>
+	<script>
+		// setTimeout()
+		// setTimeout(pesan, 1000)
+		// function pesan() {
+		// 	alert("Hello World!")
+		// }
+
+		// anmmous function
+		// const test = setTimeout(function() {
+		// 	console.log('ok')
+		// }, 3000)
+
+		// const btn = document.getElementsByTagName('button')[0]
+		// btn.addEventListener('click', function() {
+		// 	clearTimeout(test)
+		// 	console.log('finish')
+		// })
+
+		//setInterval
+		// const test = setInterval(function() {
+		// 	console.log('yes')
+		// }, 4000)
+
+		// const btn = document.getElementsByTagName('button')[0]
+		// btn.addEventListener('click', function() {
+		// 	clearInterval(test)
+		// 	console.log('finish')
+		// })
+
+
+		// program hitung mundur
+		const destinationDate = new Date('Jun 19, 2019 10:00:00').getTime()
+
+		const countDown = setInterval(function() {
+		const now = new Date().getTime()
+		const dfd = destinationDate - now;
+
+		// (detik(ms) * jml detik dalam menit * jml menit dalam jam * jml jam dalam sehari)
+		const days = Math.floor(dfd / (1000 * 60 * 60 * 24))
+		const hours = Math.floor(dfd % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+		const minutes = Math.floor(dfd % (1000 * 60 * 60) / (1000 * 60))
+		const seconds = Math.floor(dfd % (1000 * 60) / 1000)
+		
+		const teks = document.querySelector('h1')
+		teks.innerHTML = 'Waktu anda tinggal : ' +days + ' hari ' + hours + ' hours ' + minutes + ' menit ' + seconds + ' detik lagi!'
+
+		if (dfd < 0) {
+			clearInterval(countDown)
+			teks.innerHTML = "Your Time run out!"
+		}
+		})
+	</script>	
+</body>
+</html>

@@ -1,0 +1,21 @@
+div {
+	display: inline-block;
+}
+
+.one {
+	width: 200px;
+	height: 200px;
+	background-color: #f215cb;
+	margin-right: 30px;
+}
+.two {
+	width: 100px;
+	height: 100px;
+	background-color: #f21a1a;
+	margin-left: 20px;
+}
+.three {
+	width: 50px;
+	height: 50px;
+	background-color: #1bd4cd;
+}

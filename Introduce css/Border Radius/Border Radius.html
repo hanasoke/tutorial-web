@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Border Radius</title>
+	<style>
+		div.h {
+			width: 300px;
+			height: 300px;
+			background-color: salmon;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 300px;
+		}
+
+		div.hbp {
+			float: right;
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			border-top-right-radius: 50%;
+			border-bottom-left-radius: 50%;
+			background-image: url(girl.png);
+			background-size: cover;
+			text-align: center;
+			line-height: 200px;
+		}
+
+		div.happy {
+			float: left;
+			margin-top: 20px;
+			width: 350px;
+			height: 350px;
+			background-color: #0fecb0;
+			border-radius: 0 40% 35% 33%;
+			line-height: 200px;
+			text-align: left;
+		}
+
+		div.out {
+			float: left;
+			margin-top: 20px;
+			width: 350px;
+			height: 350px;
+			background-color: #0fecb0;
+			border-radius: 20% 40% 35% 33%;
+			overflow: hidden;
+		}
+
+		div.out img {
+			width: 350px;
+			height: 350px;
+		}
+	</style>
+</head>
+<body>
+	<div class="h">Hello World!</div>
+
+	<div class="hbp">Bell Mirs</div>
+
+	<div class="happy">Saya senang dengan Hijab Fashion</div>
+
+	<div class="out">
+		<img src="girl-1.png">
+	</div>
+	
+</body>
+</html>

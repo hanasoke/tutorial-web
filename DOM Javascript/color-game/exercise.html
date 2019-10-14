@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise Color</title>
+	<style>
+		html, body {
+			height: 100%;
+		}
+		body {
+			text-align: center;
+			font-family: Segoe UI, sans-serif;
+		}
+		.young-blue {background-color: lightblue;}
+		.cube {
+			width: 25px;
+			height: 25px;
+			margin: 10px auto;
+		}
+		.red {background-color: red;}
+		.green {background-color: green;}
+		.blue {background-color: blue;}
+	</style>
+</head>
+<body>
+	<h1>Playing with Color</h1>
+	<button type="button">Change The Background Color</button>
+
+	<br><br>
+	
+	<div class="red cube"></div>
+	<input type="range" name="redSlider" min="0" max="255">
+
+	<div class="green cube"></div>
+	<input type="range" name="greenSlider" min="0" max="255">
+
+	<div class="blue cube"></div>
+		<input type="range" name="blueSlider" min="0" max="255">
+
+<script>
+	const btn = document.querySelector('button')
+	btn.addEventListener('click', function() {
+		// document.body.style.backgroundColor = 'lightblue'
+
+		document.body.classList.toggle('young-blue')
+	})
+
+	const bRandomColor = document.createElement('button')
+	const buttonText = document.createTextNode('Random Color')
+	bRandomColor.appendChild(buttonText)
+	bRandomColor.setAttribute('type', 'button')
+	btn.after(bRandomColor)
+
+	bRandomColor.addEventListener('click', function() {
+		const r = Math.round(Math.random() * 255 + 1)
+		const g = Math.ceil(Math.random() * 255 + 1)
+		const b = Math.floor(Math.random() * 255 + 1)
+		document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
+	})
+
+	const redSlider = document.querySelector('input[name=redSlider]')
+	const greenSlider = document.querySelector('input[name=greenSlider]')
+	const blueSlider = document.querySelector('input[name=blueSlider]')
+
+	// change untuk ketika mouse selesai digeser maka warna backgroundColor berubah
+	// redSlider.addEventListener('change', function() {})
+	// sedangkan input bila kita geser maka warna backgroundColor berubah
+	redSlider.addEventListener('input', function() {
+		// untuk ngetes
+		// alert('ok')
+		// console.log(redSlider.value)
+		const r = redSlider.value
+		const g = greenSlider.value
+		const b = blueSlider.value
+		document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
+	})
+
+	greenSlider.addEventListener('input', function() {
+		const r = redSlider.value
+		const g = greenSlider.value
+		const b = blueSlider.value
+
+		document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
+	})
+
+	blueSlider.addEventListener('input', function() {
+		const r = redSlider.value
+		const g = greenSlider.value
+		const b = blueSlider.value
+
+		document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
+	})
+
+
+
+
+
+
+</script>
+</body>
+</html>

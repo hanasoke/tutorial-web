@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Lanjutan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="box"></div>
+
+  <!-- <script src="script.js"></script> -->
+  <!-- <script src="1.3prototype.js"></script> -->
+  <!-- <script src="2_1execution.js"></script> -->
+  <!-- <script src="2_2closure.js"></script> -->
+  <!-- <script src="3.1_arrow_function.js"></script> -->
+  <script src="3.2_this_arrow_function.js"></script>
+
+  <script>
+    // let total = 0,
+    //   count = 1;
+    // while (count <= 10) {
+    //   total += count;
+    //   count++;
+    // }
+    // console.log(total);
+
+    // let a = 0;
+    // while (a <= 20) {
+    //   ++a;
+    //   console.log(a);
+    // }
+
+    // console.log(sum(range(1, 10)));
+
+    // biasa
+    // for (let i = 0; i < 10; i++) {
+    //   console.log(i);
+    // }
+
+    // lebih memudahkan dari biasanya
+    // function repeatLog(n) {
+    //   for (let i = 0; i < n; i++) {
+    //     console.log(i)
+    //   }
+    // }
+
+    // repeatLog(10);
+
+    function repeatLog(n, action) {
+      for (let i = 0; i < n; i++) {
+        action(i)
+      }
+    }
+
+    repeatLog(10, console.log);
+    // repeatLog(10, alert);
+  </script>
+
+</body>
+
+</html>

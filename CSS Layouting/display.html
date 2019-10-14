@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Display</title>
+	<style>
+		.navigation {
+			background-color: lightgreen;
+		}
+		.main {
+			background-color: lightgoldenrodyellow;
+			width: 600px;
+		}
+		.main span {
+			background-color: lightskyblue;
+		}
+		.main h2 {
+			background-color: pink;
+		}
+		/* inline block */
+		a#navigation {
+			background-color: rgb(70, 120, 90);
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+
+		}
+		img {
+			width: 300px;
+			height: 200px;
+			display: none;
+		}
+		/* block */
+		h1 {
+			background-color: purple;
+		}
+		/* inline */
+		.only-inline li {
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Welcome to mylife</h1>
+	</div>
+
+	<div class="navigation">
+		<h2>List of Link</h2>
+		<a href="#navigation">Link 1</a>
+		<a href="#navigation">Link 2</a>
+		<a href="#navigation">Link 3</a>
+		<a href="#navigation">Link 4</a>
+		<br>
+	</div>
+	<div class="only-inline">
+		<h2>Daftar link</h2>
+		<ul>
+			<!-- h2{Daftar link}+ul>li*5>a[href=#][class=#]{link $} -->
+			<ul>
+				<li><a href="#" class="#">link 1</a></li>
+				<li><a href="#" class="#">link 2</a></li>
+				<li><a href="#" class="#">link 3</a></li>
+				<li><a href="#" class="#">link 4</a></li>
+				<li><a href="#" class="#">link 5</a></li>
+			</ul>
+	</div>
+
+	<div class="main">
+		<h2>Head of Article</h2>
+		<h2>Head of Article</h2>
+		<img src="../Introduce css/Galeri Foto + Light Box/img/full/maher.png">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nobis, aperiam possimus perspiciatis illo et quod expedita odit corporis <span>provident quaerat fugiat, praesentium libero</span> veritatis nisi repellat mollitia commodi consectetur?</p>
+		<p>Quibusdam, labore, ad! Fuga magni perspiciatis porro possimus deserunt veritatis ratione distinctio earum repellat vitae, unde praesentium iure tempore voluptates ducimus nam obcaecati doloribus minus explicabo quisquam! Numquam, dignissimos, officia.</p>
+	</div>
+
+	<div class="copyright">
+		<p>Copyright 2019. Hanas WEB</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Box-Shadow</title>
+	<style>
+		div.no {
+			width: 200px;
+			height: 200px;
+			background-color: #39b54a;
+			margin: 50px auto;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, .75);
+		}
+		div.spread {
+			width: 200px; 
+			height: 200px;
+			background-color: #39b54a;
+			margin: 50px auto;
+			box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .75);
+		}
+		div.nothing {
+			width: 200px;
+			height: 200px;
+			background-color: lightskyblue;
+			margin: 50px auto;
+			box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, .75);
+		}
+		div.maybe {
+			width: 200px;
+			height: 200px;
+			background-color: lightgoldenrodyellow;
+			margin: 50px auto;
+			box-shadow: 0px 30px 10px -20px rgba(0, 0, 0, .75);
+			transition: .3s;
+		}
+
+		div.maybe:hover {
+			box-shadow: 0px 80px 10px -40px rgba(0, 0, 0, .15);
+			margin-top: 40px;
+		}
+
+		div.new {
+			width: 300px;
+			height: 300px;
+			background-color: #f356f5;
+			margin: 50px auto;
+			box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
+		}
+
+		div.shadows {
+			width: 250px;
+			height: 250px;
+			background-color: #14f1e9;
+			margin: 20px auto;
+			box-shadow: 5px 5px 5px rgba(255, 0, 0, .5), -5px -5px 5px rgba(0, 0, 255, .5);
+		}
+		div.pingu {
+			width: 250px;
+			height: 250px;
+			background-color: #e1a81f;
+			margin: 50px 40px auto;
+			margin-bottom: 30px;
+			border-radius: 50%;
+			box-shadow: 0px 0px 0px 5px red,
+			0 0 0 10px green,
+			0 0 0 15px yellow,
+			0 0 0 20px orange;
+		}
+	</style>
+</head>
+<body>
+
+<p><font size="4" color="lightblue">With CSS3</font></p>
+
+<div class="no"></div>
+
+<div class="spread"></div>
+
+<div class="nothing"></div>
+
+<div class="maybe"></div>
+
+<div class="new"></div>
+
+<div class="shadows"></div>
+
+<div class="pingu"></div>
+
+
+
+
+	
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>radial gradient</title>
+</head>
+<style>
+	div.one {
+		width: 200px;
+		height: 150px;
+		background-image: radial-gradient(red, blue);
+	}
+
+	div.two {
+		width: 200px;
+		height: 150px;
+		background-image: radial-gradient(red, green, blue);
+	}
+
+	div.three {
+		width: 200px;
+		height: 150px;
+		background-image: radial-gradient(red 10%, green 20%, blue 80%);
+	}
+
+	div.four {
+		width: 300px;
+		height: 250px;
+		margin: auto;
+		background-image: radial-gradient(circle, green, orange, yellow);
+	}
+
+	div.five {
+		width: 300px;
+		height: 250px;
+		margin: auto;
+		background-image: radial-gradient(ellipse, green, orange, yellow);
+	}
+
+	div.six {
+		width: 300px;
+		height: 250px;
+		margin: auto;
+		background-image: radial-gradient(circle closest-side, pink, orange, yellow);
+	}
+
+	div.seven {
+		width: 300px;
+		height: 200px;
+		margin: auto;
+		background-image: radial-gradient(circle farthest-corner, #2cf817, #50d262, #9bf211);
+	}
+
+	div.eight {
+		width: 200px;
+		height: 120px;
+		margin: auto;
+		background-image: radial-gradient(circle farthest-side at top left, #15e9e7, #0c26e8);
+	}
+</style>
+
+<body>
+
+	<p>
+		<font size="5" color="#f80909" face="Roboto">Center</font>
+	</p>
+
+	<div class="one"></div>
+	<br>
+	<div class="two"></div>
+	<br>
+	<div class="three"></div>
+	<br>
+	<div class="four"></div>
+	<br>
+	<div class="five"></div>
+	<br>
+	<div class="six"></div>
+	<br>
+	<div class="seven"></div>
+	<br>
+	<div class="eight"></div>
+
+</body>
+
+</html>

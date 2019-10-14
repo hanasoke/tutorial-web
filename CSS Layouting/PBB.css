@@ -1,0 +1,25 @@
+.exercise {
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+	margin: 20px auto;
+	padding: 50px;
+	border: 10px dashed #f2b90a;
+}
+
+/* border box */
+.hey {
+	width: 600px;
+	margin: auto;
+	box-sizing: border-box;
+}
+.first {
+	background-color: royalblue;
+	padding: 10px;
+	border: 5px solid red;
+}
+.second {
+	background-color: lightgreen;
+	padding: 30px;
+	border: 10px dashed orange;
+}

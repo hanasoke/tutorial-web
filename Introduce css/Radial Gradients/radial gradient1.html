@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Radial Gradient1</title>
+	<style>
+		body {
+			background-image: url('united-squares.png');
+			height: 1000px;
+		}
+		.head {
+			width: 600px;
+			height: 300px;
+			background: radial-gradient(#c614f2, #32ef13);
+			margin: auto;
+			margin-top: 150px;
+			position: relative;
+		}
+		.one {
+			width: 300px;
+			height: 200px;
+			background: radial-gradient(ellipse,rgba(40, 200, 150, 0.5) 40%, yellow 50%,lightskyblue 60%);
+			position: relative;
+			top: -100px;
+			left: -140px;
+		}
+		.two {
+			width: 300px;
+			height: 200px;
+			background: radial-gradient(circle farthest-side, #b327b1 20%, rgba(150, 110, 190, 0.825) 30%, #8c189a 60%);
+			position: absolute;
+			top: -100px;
+			right: -100px;
+		}
+		.three {
+			width: 300px;
+			height: 200px;
+			background: radial-gradient(circle at top right, #1317c7,rgba(67, 0, 0, .6) 20%, rgba(134, 0, 0, .78) 40%, #1ef528 50%, #1fe9f0 65%, rgb(100, 10, 153, .676) 87%);
+			position: absolute;
+			bottom: -100px;
+			left: -100px;
+		}
+		.four {
+			width: 300px;
+			height: 200px;
+			background: radial-gradient(ellipse at bottom left, rgba(200, 0, 0, .5) 15%, #11f30c 30%, rgba(0, 0, 255, 0.4) 60%, #e809d0 80%, rgba(100, 100, 0, 0.55) 90%);
+			position: absolute;
+			bottom: -100px;
+			right: -100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<div class="one"></div>
+		<div class="two"></div>
+		<div class="three"></div>
+		<div class="four"></div>
+	</div>
+
+	
+</body>
+</html>
